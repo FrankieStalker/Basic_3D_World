@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "dat.gui": "^0.7.7",
+    "express": "^4.17.1",
+    "lil-gui": "^0.15.0",
+    "three": "^0.135.0"
+  },
+  "name": "basic_3d_world",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cannon-es": "^0.18.0"
+  }
+}

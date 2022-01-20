@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Three.js Project</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+        body {
+            overflow: hidden;
+            margin: 0px;
+            font-family: monospace;
+        }
+        
+        /* CSS for pointlock */
+        #blocker {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+		}
+
+        #instructions {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: left;
+
+            text-align: center;
+            font-size: 14px;
+            cursor: crosshair;
+
+            
+        }
+    </style>
+    <!-- Using import map to import three.js functions -->
+    <script type="importmap">
+        {
+          "imports": {
+            "three":"./build/three.module.js",
+            "three/examples/jsm/libs/stats.module":"./jsm/libs/stats.module.js",
+            "three/examples/jsm/libs/lil-gui.module.min":"./jsm/libs/lil-gui.module.min.js",
+            "three/examples/jsm/loaders/GLTFLoader":"./jsm/loaders/GLTFLoader.js",
+            "three/examples/jsm/loaders/FBXLoader":"./jsm/loaders/FBXLoader.js",
+            "three_mmi":"./three_mmi.js",
+            "three/examples/jsm/controls/PointerLockControls":"./jsm/controls/PointerLockControls.js",
+            "three/examples/jsm/loaders/FontLoader":"./jsm/loaders/FontLoader.js",
+            "three/examples/jsm/geometries/TextGeometry":"./jsm/geometries/TextGeometry.js",
+            "three/examples/jsm/objects/Water2":"./jsm/objects/Water2.js"
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <script type="module" src="main.js"></script>
+    <script src="cannon.js"></script>
+    <!-- Interface while in pointlock -->
+    <div id="blocker">
+        <div id="instructions">
+            <p style="font-size: 60px">
+                Click Just Below Pink Dot
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
